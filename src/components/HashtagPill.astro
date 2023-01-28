@@ -1,0 +1,18 @@
+---
+const { text } = Astro.props;
+---
+
+<a class="hashtag-pill-link" href={`/tags/${text}`}>
+  <span class="hashtag-pill-text"> #{text}</span>
+</a>
+
+<style>
+  .hashtag-pill-link {
+    border: dotted 1px #a1a1a1;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    font-size: 1.15em;
+    background-color: #f8fcfd;
+    color: #00539f;
+  }
+</style>
